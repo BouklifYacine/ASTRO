@@ -1,4 +1,4 @@
-import { Menu, MessageCircleMore, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 import { NavbarLogoLink } from "@/components/navbar/navbar-logo";
@@ -6,6 +6,7 @@ import { MobileNavbarMenuItem } from "@/components/navbar/navbar-menu-item";
 import type { MenuItem, NavbarAction, NavbarLogo } from "@/components/navbar/types";
 import { Accordion } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import whatsappIcon from "../../assets/whatsapp-symbol-logo-svgrepo-com.svg";
 
 interface NavbarMobileProps {
   logo: NavbarLogo;
@@ -28,7 +29,12 @@ export function NavbarMobile({ logo, menu, cta, contactUrl }: NavbarMobileProps)
               aria-label="Contacter PeakLab"
               className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_0_0_10px_rgba(37,211,102,0.16)]"
             >
-              <MessageCircleMore className="size-7" strokeWidth={2.2} />
+              <img
+                src={whatsappIcon.src}
+                alt=""
+                aria-hidden="true"
+                className="h-7 w-7 object-contain"
+              />
             </a>
             <button
               type="button"

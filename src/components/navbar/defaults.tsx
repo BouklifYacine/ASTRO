@@ -4,7 +4,7 @@ import type { MenuItem, NavbarAction, NavbarLogo } from "@/components/navbar/typ
 
 export const defaultNavbarLogo: NavbarLogo = {
   url: "#",
-  title: "PeakLab",
+  title: "BoyaStudio",
 };
 
 export const defaultMenu: MenuItem[] = [
