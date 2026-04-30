@@ -10,29 +10,19 @@ export interface MenuItem {
 
 export interface NavbarLogo {
   url: string;
-  src: string;
-  alt: string;
+  src?: string;
+  alt?: string;
   title: string;
 }
 
-export interface MobileExtraLink {
-  name: string;
-  url: string;
-}
-
-export interface NavbarAuthLink {
+export interface NavbarAction {
   text: string;
   url: string;
-}
-
-export interface NavbarAuth {
-  login: NavbarAuthLink;
-  signup: NavbarAuthLink;
 }
 
 export interface Navbar1Props {
   logo?: NavbarLogo;
   menu?: MenuItem[];
-  mobileExtraLinks?: MobileExtraLink[];
-  auth?: NavbarAuth;
+  cta?: NavbarAction;
+  contactUrl?: string;
 }

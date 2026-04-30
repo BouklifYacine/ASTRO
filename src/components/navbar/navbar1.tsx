@@ -1,7 +1,7 @@
 import {
-  defaultAuth,
+  defaultContactUrl,
+  defaultCta,
   defaultMenu,
-  defaultMobileExtraLinks,
   defaultNavbarLogo,
 } from "@/components/navbar/defaults";
 import { NavbarDesktop } from "@/components/navbar/navbar-desktop";
@@ -11,18 +11,23 @@ import type { Navbar1Props } from "@/components/navbar/types";
 export function Navbar1({
   logo = defaultNavbarLogo,
   menu = defaultMenu,
-  mobileExtraLinks = defaultMobileExtraLinks,
-  auth = defaultAuth,
+  cta = defaultCta,
+  contactUrl = defaultContactUrl,
 }: Navbar1Props) {
   return (
-    <section className="py-4">
-      <div className="container">
-        <NavbarDesktop logo={logo} menu={menu} auth={auth} />
+    <section className="px-3 py-5 sm:px-5">
+      <div className="mx-auto w-full max-w-280">
+        <NavbarDesktop
+          logo={logo}
+          menu={menu}
+          cta={cta}
+          contactUrl={contactUrl}
+        />
         <NavbarMobile
           logo={logo}
           menu={menu}
-          mobileExtraLinks={mobileExtraLinks}
-          auth={auth}
+          cta={cta}
+          contactUrl={contactUrl}
         />
       </div>
     </section>

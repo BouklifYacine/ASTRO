@@ -1,84 +1,97 @@
 import { Book, Sunset, Trees, Zap } from "lucide-react";
 
-import type {
-  MenuItem,
-  MobileExtraLink,
-  NavbarAuth,
-  NavbarLogo,
-} from "@/components/navbar/types";
+import type { MenuItem, NavbarAction, NavbarLogo } from "@/components/navbar/types";
 
 export const defaultNavbarLogo: NavbarLogo = {
-  url: "https://www.shadcnblocks.com",
-  src: "https://www.shadcnblocks.com/images/block/block-1.svg",
-  alt: "logo",
-  title: "Shadcnblocks.com",
+  url: "#",
+  title: "PeakLab",
 };
 
 export const defaultMenu: MenuItem[] = [
-  { title: "Home", url: "#" },
   {
-    title: "Products",
+    title: "Services",
     url: "#",
     items: [
       {
-        title: "Blog",
-        description: "The latest industry news, updates, and info",
+        title: "Audit SEO",
+        description: "Analyse technique, contenu et opportunites de croissance",
         icon: <Book className="size-5 shrink-0" />,
         url: "#",
       },
       {
-        title: "Company",
-        description: "Our mission is to innovate and empower the world",
+        title: "Site vitrine",
+        description: "Conception rapide et conversion orientee business",
         icon: <Trees className="size-5 shrink-0" />,
         url: "#",
       },
       {
-        title: "Careers",
-        description: "Browse job listing and discover our workspace",
+        title: "Refonte",
+        description: "Refondre l'existant sans perdre en performance",
         icon: <Sunset className="size-5 shrink-0" />,
         url: "#",
       },
       {
-        title: "Support",
-        description:
-          "Get in touch with our support team or visit our community forums",
+        title: "Automatisation",
+        description: "Flux, CRM et integrations pour gagner du temps",
         icon: <Zap className="size-5 shrink-0" />,
         url: "#",
       },
     ],
   },
   {
-    title: "Resources",
+    title: "Stack",
     url: "#",
     items: [
       {
-        title: "Help Center",
-        description: "Get all the answers you need right here",
+        title: "Astro",
+        description: "Front rapide et ultra leger pour le contenu",
         icon: <Zap className="size-5 shrink-0" />,
         url: "#",
       },
       {
-        title: "Contact Us",
-        description: "We are here to help you with any questions you have",
+        title: "React",
+        description: "Interfaces interactives et composants evolutifs",
         icon: <Sunset className="size-5 shrink-0" />,
         url: "#",
       },
       {
-        title: "Status",
-        description: "Check the current status of our services and APIs",
+        title: "Supabase",
+        description: "Base de donnees, auth et backend moderne",
         icon: <Trees className="size-5 shrink-0" />,
         url: "#",
       },
       {
-        title: "Terms of Service",
-        description: "Our terms and conditions for using our services",
+        title: "OpenAI",
+        description: "Agents, chatbots et workflows IA utiles",
         icon: <Book className="size-5 shrink-0" />,
         url: "#",
       },
     ],
   },
   {
-    title: "Pricing",
+    title: "Free Tools",
+    url: "#",
+    items: [
+      {
+        title: "Simulateur ROI",
+        description: "Estimer rapidement le gain potentiel d'un projet",
+        icon: <Zap className="size-5 shrink-0" />,
+        url: "#",
+      },
+      {
+        title: "Checklist SEO",
+        description: "Verifier les points cles avant une mise en ligne",
+        icon: <Book className="size-5 shrink-0" />,
+        url: "#",
+      },
+    ],
+  },
+  {
+    title: "Cas clients",
+    url: "#",
+  },
+  {
+    title: "À propos",
     url: "#",
   },
   {
@@ -87,14 +100,9 @@ export const defaultMenu: MenuItem[] = [
   },
 ];
 
-export const defaultMobileExtraLinks: MobileExtraLink[] = [
-  { name: "Press", url: "#" },
-  { name: "Contact", url: "#" },
-  { name: "Imprint", url: "#" },
-  { name: "Sitemap", url: "#" },
-];
-
-export const defaultAuth: NavbarAuth = {
-  login: { text: "Log in", url: "#" },
-  signup: { text: "Sign up", url: "#" },
+export const defaultCta: NavbarAction = {
+  text: "Prendre rendez-vous",
+  url: "#",
 };
+
+export const defaultContactUrl = "#";
