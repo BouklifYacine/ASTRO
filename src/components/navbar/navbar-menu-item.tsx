@@ -19,7 +19,7 @@ export function DesktopNavbarMenuItem({ item }: NavbarMenuItemProps) {
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
-        <NavigationMenuTrigger className="h-auto rounded-full bg-transparent px-3 py-2 text-[0.97rem] font-medium text-white hover:bg-white/8 hover:text-white focus:bg-white/8 focus:text-white data-active:bg-white/8 data-[state=open]:bg-white/8">
+        <NavigationMenuTrigger className="h-auto rounded-full bg-transparent px-2.5 py-1.5  font-medium text-white hover:bg-white/8 hover:text-white focus:bg-white/8 focus:text-white data-active:bg-white/8 data-[state=open]:bg-white/8">
           {item.title}
         </NavigationMenuTrigger>
         <NavigationMenuContent className="rounded-3xl border border-white/10 bg-black/96 p-2 shadow-[0_18px_60px_rgba(0,0,0,0.45)] backdrop-blur">
@@ -55,7 +55,7 @@ export function DesktopNavbarMenuItem({ item }: NavbarMenuItemProps) {
   return (
     <a
       key={item.title}
-      className="inline-flex h-auto items-center justify-center rounded-full px-3 py-2 text-[0.97rem] font-medium text-white transition-colors hover:bg-white/8"
+      className="inline-flex h-auto items-center justify-center rounded-full px-2.5 py-1.5 text-[0.86rem] font-medium text-white transition-colors hover:bg-white/8"
       href={item.url}
     >
       {item.title}

@@ -15,7 +15,7 @@ export function Navbar1({
   contactUrl = defaultContactUrl,
 }: Navbar1Props) {
   return (
-    <section className="px-3 py-5 sm:px-5">
+    <section className="px-3 py-4 sm:px-5">
       <div className="mx-auto w-full max-w-280">
         <NavbarDesktop
           logo={logo}

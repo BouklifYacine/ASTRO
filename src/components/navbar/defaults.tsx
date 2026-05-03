@@ -13,27 +13,21 @@ export const defaultMenu: MenuItem[] = [
     url: "#",
     items: [
       {
-        title: "Audit SEO",
-        description: "Analyse technique, contenu et opportunites de croissance",
+        title: "MVP/POC",
+        description: "Prototype rapide pour valider une idee produit",
         icon: <Book className="size-5 shrink-0" />,
         url: "#",
       },
       {
         title: "Site vitrine",
-        description: "Conception rapide et conversion orientee business",
+        description: "Site rapide, clair et oriente conversion",
         icon: <Trees className="size-5 shrink-0" />,
         url: "#",
       },
       {
         title: "Refonte",
-        description: "Refondre l'existant sans perdre en performance",
+        description: "Moderniser l'existant sans perdre en performance",
         icon: <Sunset className="size-5 shrink-0" />,
-        url: "#",
-      },
-      {
-        title: "Automatisation",
-        description: "Flux, CRM et integrations pour gagner du temps",
-        icon: <Zap className="size-5 shrink-0" />,
         url: "#",
       },
     ],
@@ -55,14 +49,14 @@ export const defaultMenu: MenuItem[] = [
         url: "#",
       },
       {
-        title: "Supabase",
-        description: "Base de donnees, auth et backend moderne",
+        title: "NextJS",
+        description: "Framework React pour apps et SEO",
         icon: <Trees className="size-5 shrink-0" />,
         url: "#",
       },
       {
         title: "OpenAI",
-        description: "Agents, chatbots et workflows IA utiles",
+        description: "Agents, chatbots et automatisations IA utiles",
         icon: <Book className="size-5 shrink-0" />,
         url: "#",
       },
@@ -80,7 +74,7 @@ export const defaultMenu: MenuItem[] = [
       },
       {
         title: "Checklist SEO",
-        description: "Verifier les points cles avant une mise en ligne",
+        description: "Verifier les points cles avant mise en ligne",
         icon: <Book className="size-5 shrink-0" />,
         url: "#",
       },
@@ -92,10 +86,6 @@ export const defaultMenu: MenuItem[] = [
   },
   {
     title: "À propos",
-    url: "#",
-  },
-  {
-    title: "Blog",
     url: "#",
   },
 ];

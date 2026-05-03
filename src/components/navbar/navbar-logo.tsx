@@ -7,7 +7,7 @@ interface NavbarLogoProps {
 export function NavbarLogoLink({ logo }: NavbarLogoProps) {
   return (
     <a href={logo.url} className="flex items-center text-white">
-      <span className="text-[1.1rem] font-semibold tracking-[-0.04em]">{logo.title}</span>
+      <span className="text-xl font-semibold tracking-tighter">{logo.title}</span>
     </a>
   );
 }
